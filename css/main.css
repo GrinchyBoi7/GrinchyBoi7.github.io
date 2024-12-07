@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.png");
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px #77DD77; }
   .menu .nav-item {
@@ -154,7 +154,9 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'experience1 experience2 experience3' 'experience4 experience5 experience6 ';
+  grid-template-areas: 'bioimage bio bio'
+ 'experience1 experience2 experience3'
+ 'experience4 experience5 experience6 ';
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 1rem; }
   .about-info .bio-image {
@@ -272,11 +274,16 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../img/portrait_small.png);
+      background: url(../img/portrait_small.jpg);
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'experience1' 'experience2' 'experience3' 'experience4';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'experience1'
+ 'experience2'
+ 'experience3'
+ 'experience4';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
