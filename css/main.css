@@ -155,8 +155,8 @@ main {
 .about-info {
   display: grid;
   grid-template-areas: 'bioimage bio bio'
- 'experience1 experience2 experience3'
- 'experience4 experience5 experience6 ';
+ 'experience1 experience2 experience5'
+ 'experience4 experience3 experience5 ';
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 1rem; }
   .about-info .bio-image {
@@ -179,6 +179,11 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #77DD77 5px solid; }
+    .about-info .experience-5 {
+      grid-area: experience5; 
+      color: #000;
+      background: #d3d3d3;
+      border-bottom: #7b19c1 5px solid;}
 
 .projects {
   display: grid;
@@ -247,7 +252,10 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-areas: 'bioimage bio bio'
+ 'experience1 experience2 experience5'
+ 'experience4 experience3 experience5 ';
+  grid-template-columns: repeat(3, 3fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -284,7 +292,8 @@ main {
  'experience1'
  'experience2'
  'experience3'
- 'experience4';
+ 'experience4'
+ 'experience5';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } 
