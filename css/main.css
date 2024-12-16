@@ -227,10 +227,12 @@ main {
   font-size: 1.5rem; }
 
 .btn, .btn-dark, .btn-light {
+  width: 20rem;
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem; 
+  margin-top: 0.3rem;}
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #77DD77;
     color: #000; }
@@ -255,7 +257,8 @@ main {
     grid-template-areas: 'bioimage bio bio'
  'experience1 experience2 experience5'
  'experience4 experience3 experience5 ';
-  grid-template-columns: repeat(3, 3fr); } }
+  grid-template-columns: repeat(3, 3fr); } 
+}
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -313,3 +316,53 @@ main {
       font-size: 1.7rem; } 
       .boxes div:hover {
         padding: 0.5rem 1.5rem;} }
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.card {
+  width: 20rem;
+  height: 11rem;
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.front{
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.back{
+  background:#222;
+  z-index: 1;
+  transform: rotateY(180deg);
+  padding: 1rem;
+}
+
+.item:hover .card{
+  transform: rotateY(180deg);
+}
+
+.item{
+  perspective: 1000px;
+}
+
