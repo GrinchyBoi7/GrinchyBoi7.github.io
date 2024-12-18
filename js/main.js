@@ -5,6 +5,9 @@ const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 
+
+const december = document.querySelector('.december');
+
 //Set initial
 let showMenu = false;
 
@@ -26,4 +29,12 @@ function toggleMenu() {
         navItems.forEach(item => item.classList.remove('show'));
         showMenu = false;
     }
+}
+
+const xmas = 11;
+const curMonth = new Date().getMonth();
+if (curMonth == xmas) {
+    december.classList.add('show');
+} else {
+    december.classList.remove('show');
 }

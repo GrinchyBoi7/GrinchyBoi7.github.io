@@ -267,6 +267,10 @@ main {
     width: 28vw;
     height: 34vh;
     position: relative;}
+    .holidayText{
+      font-size: 30px;
+      left: 20vw;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
@@ -274,6 +278,10 @@ main {
     width: 40vw;
     height: 34vh;
     position: relative;}
+    .holidayText{
+      font-size: 30px;
+      left: 20vw;
+    }
   .btn-light, .btn-dark{
     width: 40vw;
     position: relative;}
@@ -327,7 +335,11 @@ main {
       padding: 1.5rem 2.5rem;
       font-size: 1.7rem; } 
       .boxes div:hover {
-        padding: 1.5rem 2.5rem;} }
+        padding: 1.5rem 2.5rem;}
+        .holidayText{
+          font-size: 15px;
+          left: 43.5vw;
+        } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -336,6 +348,10 @@ main {
     width: 70vw;
     height: 28vh;
     position: center;}
+    .holidayText{
+      font-size: 15px;
+      left: 39vw;
+    }
   .projects {
     grid-template-columns: 1fr; }
     .boxes div {
@@ -392,8 +408,14 @@ main {
 }
 
 
-
-.tree {
+.december{
+  visibility: hidden;
+}
+.december.show{
+  visibility: visible;
+}
+.xmastree{
+  
   position: absolute;
   overflow: visible;
   fill: none;
@@ -411,56 +433,63 @@ main {
   -webkit-animation: opacity 2.7s forwards linear, rotate3d 5.4s infinite linear, stoke 5.4s infinite linear;
           animation: opacity 2.7s forwards linear, rotate3d 5.4s infinite linear, stoke 5.4s infinite linear;
 }
-.tree:nth-of-type(1n) {
+.xmastree:nth-of-type(1n) {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
-.tree:nth-of-type(2n) {
+.xmastree:nth-of-type(2n) {
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
 }
-.tree:nth-of-type(3n) {
+.xmastree:nth-of-type(3n) {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
-.tree:nth-of-type(4n) {
+.xmastree:nth-of-type(4n) {
   -webkit-animation-delay: 1.35s;
           animation-delay: 1.35s;
 }
-.tree:nth-of-type(5n) {
+.xmastree:nth-of-type(5n) {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
 }
-.tree:nth-of-type(6n) {
+.xmastree:nth-of-type(6n) {
   -webkit-animation-delay: 2.25s;
           animation-delay: 2.25s;
 }
-.tree:nth-of-type(7n) {
+.xmastree:nth-of-type(7n) {
   -webkit-animation-delay: 2.7s;
           animation-delay: 2.7s;
 }
-.tree:nth-of-type(8n) {
+.xmastree:nth-of-type(8n) {
   -webkit-animation-delay: 3.15s;
           animation-delay: 3.15s;
 }
-.tree:nth-of-type(9n) {
+.xmastree:nth-of-type(9n) {
   -webkit-animation-delay: 3.6s;
           animation-delay: 3.6s;
 }
-.tree:nth-of-type(10n) {
+.xmastree:nth-of-type(10n) {
   -webkit-animation-delay: 4.05s;
           animation-delay: 4.05s;
 }
-.tree:nth-of-type(11n) {
+.xmastree:nth-of-type(11n) {
   -webkit-animation-delay: 4.5s;
           animation-delay: 4.5s;
 }
-.tree:nth-of-type(12n) {
+.xmastree:nth-of-type(12n) {
   -webkit-animation-delay: 4.95s;
           animation-delay: 4.95s;
 }
-.tree:last-of-type {
+.xmastree:last-of-type {
   opacity: 0.5;
+}
+.holidayText{
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  bottom: 0;
 }
 
 @-webkit-keyframes opacity {
